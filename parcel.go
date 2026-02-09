@@ -7,7 +7,7 @@ import (
 type ParcelStore struct {
 	db *sql.DB
 }
-
+// для коммита
 func NewParcelStore(db *sql.DB) ParcelStore {
 	return ParcelStore{db: db}
 }
