@@ -13,7 +13,6 @@ jobs:
       - name: Vet
         run: |
           go vet ./...
-<<<<<<< HEAD
   deploy:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
@@ -45,5 +44,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}        
-=======
->>>>>>> e5dbe6a15ed04b3b8513309db899b71f86fe6d69
